@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+    </style>
+    <title>CW06 Part 1 and part 2</title>
+	<p> Part 1</p>
+<a href="p1p1.html">Problem 1</a>
+<a href="p1p2.html">Problem 2</a>
+<a href="p1p3.html">Problem 3</a>
+<a href="p1p4.html">Problem 4</a>
+	<a href="p1p5.html">Problem 5</a>
+		<a href="p1p6.html">Problem 6</a>
+	<p> Part 2</p>
+<a href="p1p1.html">Part 2 form Validation</a>
+
+
+  </head>
+  <body>
+  </body>
+</html>

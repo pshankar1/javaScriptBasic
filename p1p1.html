@@ -1,0 +1,26 @@
+<html>
+<head><title>fibonacci </title></head>
+<body>
+   <script type="text/javascript">
+   
+
+       var x = 0, y=1,z,i,n;
+
+       var n = prompt("Enter number of terms of the series ",0);
+
+       document.write(x+"<br />");
+       document.write(y+"<br />");
+
+       for( i=3; i <= n;i++)
+       {
+           z = x + y;
+           x = y;
+           y = z;
+
+           document.write(z+"<br />");
+       }
+
+   </script>
+
+</body>
+</html>

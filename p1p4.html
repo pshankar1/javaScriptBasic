@@ -1,0 +1,37 @@
+<script>
+    function many(arrays, n)
+    {
+           
+        arrays.sort();
+
+        let highest = 1, x = arrays[0];
+        let now = 1;
+           
+        for (let i = 1; i < n; i++)
+        {
+            if (arrays[i] == arrays[i - 1])
+                now++;
+            else
+            {
+                if (now > highest)
+                {
+                    highest = now;
+                    x = arrays[i - 1];
+                }
+                now = 1;
+            }
+        }
+       
+
+        if (now > highest)
+        {
+            highest = now;
+            x = arrays[n - 1];
+        }
+        return x;
+    }
+        
+        let arrays = [1, 4, 5, 2, 4, 3, 1];
+        let n = arrays.length;
+        document.write(many(arrays,n));
+</script>

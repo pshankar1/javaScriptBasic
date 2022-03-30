@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+  <script>
+    function bubbleSort(numbers){
+    var fullLength = numbers.fullLengthgth;
+    var i, j;
+    var cc;
+
+    for (i=fullLength-1; i >= 0; i--){
+        for (j=fullLength-i; j >= 0; j--){
+            if (numbers[j] < numbers[j-1]){
+                cc = numbers[j- 1];
+                numbers[j - 1] = numbers[j];
+                numbers[j] = cc;
+            }
+        }
+    }
+
+    for(i = 0; i < fullLength; i++)
+    {
+      document.write(numbers[i]+" ");
+    }
+}
+
+let numbers = [3, 8, 7 , 6, 5, -4, -3, -2, 1];
+bubbleSort(numbers);
+  </script>
+</html>

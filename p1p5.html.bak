@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html> 
+ 
+<!-- Head of html tag -->  
+<head> 
+    <title>6 int vals</title> 
+</head> 
+  
+<!-- Body of Html  tag -->  
+<body> 
+    <p>Input arrayzay : [1,2,3,4,5,6]</p> 
+      
+    <button onclick="display()"> 
+        click 
+    </button> 
+          <script> 
+          function shuffling(arrayz) { 
+            for (var x = arrayz.length - 1; x > 0; x--) { 
+                  var n = Math.floor(Math.random() * (x + 1)); 
+                var count = arrayz[x]; 
+                arrayz[x] = arrayz[n]; 
+                arrayz[n] = count; 
+            } 
+            return arrayz; 
+        } 
+  
+        function display() 
+        { 
+            var arrayz = [1,2,3,4,5,6] 
+            var finalarrayz = shuffling(arrayz) 
+            document.write("Final arrayzay After Shuffling : ", finalarrayz) 
+        } 
+    </script> 
+</body> 
+  
+</html>

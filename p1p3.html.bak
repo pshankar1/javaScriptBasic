@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+  <script>
+    function bubbleSort(arr1){
+    var fullLength = arr1.fullLengthgth;
+    var i, j;
+    var cc;
+
+    for (i=fullLength-1; i >= 0; i--){
+        for (j=fullLength-i; j >= 0; j--){
+            if (arr1[j] < arr1[j-1]){
+                cc = arr1[j- 1];
+                arr1[j - 1] = arr1[j];
+                arr1[j] = cc;
+            }
+        }
+    }
+
+    for(i = 0; i < fullLength; i++)
+    {
+      document.write(arr1[i]+" ");
+    }
+}
+
+let arr1 = [3, 8, 7 , 6, 5, -4, -3, -2, 1];
+bubbleSort(arr1);
+  </script>
+</html>

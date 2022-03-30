@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Part 2</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.color{
+
+color: red;
+
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<form>
+
+<table>
+
+<tr>
+
+<td>ID : </td>
+
+<td>
+
+<label id="lid"></label> <br>
+
+<input type="text" id="id"/>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>FirstName : </td>
+
+<td>
+
+<label id="first"></label> <br>
+
+
+<input type="text" id="firstName"/>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>LastName : </td>
+
+<td>
+
+<label id="last"></label> <br>
+
+
+<input type="text" id="lastName"/>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td></td>
+
+<td>
+
+<input type="button" value="Add" onclick="validate()"/>
+
+</td>
+
+</tr>
+
+</table>
+
+<div id="details"></div>
+
+</form>
+
+<script>
+
+function validate()
+
+{
+
+var flag=0;
+
+
+var id=document.getElementById("id").value;
+
+var firstName=document.getElementById("firstName").value;
+
+var lastName=document.getElementById("lastName").value;
+
+var htmlString="";
+
+if(id=="")
+
+{
+
+
+document.getElementById("lid").innerHTML="Please Enter an ID";
+
+document.getElementById("lid").className="color";
+
+htmlString+="ID ";
+
+flag=1;
+
+}
+
+if(firstName=="")
+
+{
+
+document.getElementById("first").innerHTML="Please Enter a First Name";
+
+document.getElementById("first").className="color";
+htmlString+="First Name ";
+
+flag=1;
+
+}
+
+if(lastName=="")
+
+{
+
+document.getElementById("last").innerHTML="Please Enter a Last Name";
+
+document.getElementById("last").className="color";
+
+htmlString+="Last Name ";
+
+flag=1;
+
+}
+
+
+if(flag==1){
+
+
+alert("You forgot to fill the following  "+htmlString);
+
+}
+
+else
+
+{ 
+
+document.getElementById("details").innerHTML="ID : "+id+"<br/> First Name : "+firstName+"<br/> Last Name : "+lastName;
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
